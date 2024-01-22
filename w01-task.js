@@ -21,3 +21,7 @@ function total(...theNumbers) {
 	}
 	return sum
 }
+
+const z = 3 + 4
+
+console.log(z)
