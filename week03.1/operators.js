@@ -48,3 +48,12 @@ function encounter() {
 } 
 
 encounter();
+
+let firstName = 'Antonia';
+let lastName = 'Francesca';
+
+const fullName = (first, last) => `${first} ${last}`;
+  
+console.log(fullName)
+
+document.querySelector("#fullName").innerHTML = fullName (firstName, lastName)
