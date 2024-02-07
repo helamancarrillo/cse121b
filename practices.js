@@ -1,21 +1,35 @@
-let names = ['Nancy','Blessing','Jorge','Svetlana','Bob'];
+const DAYS = 6;
+const LIMIT = 30;
+let studentReport = [11, 42, 33, 64, 29, 37, 44]; 
 
 
-function filterItems(arr, query) {
-    return arr.filter((el) => el.toLowerCase().includes(query.toLowerCase()));
+for (let i = 0; i <= studentReport.length; i++ ) {
+
+  if ( studentReport[i] < LIMIT) {
+    console.log(studentReport[i]);
   }
 
+}
 
-console.log(filterItems(names, "B")); 
+let i = 0
 
+while (i <= studentReport.length) {
+  if (studentReport[i] < LIMIT){
+    console.log(studentReport[i]);
+  }
+  i++
+}
 
-const namesLength = names.map((x) => x.length); 
+studentReport.forEach((number) => {
 
-console.log(namesLength); 
+  if (number < LIMIT) {
+    console.log(number) 
+  }
 
+});
 
-const sum = namesLength.reduce((x , y) => (x + y));
-
-const average = sum / 5 
-
-console.log(average);
+for (let men30 in studentReport) {
+  if (studentReport[men30] < LIMIT) {
+    console.log(studentReport[men30]);
+  }
+}
